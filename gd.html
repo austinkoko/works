@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ａustin_Design</title>
+    <link type="text/css" rel="stylesheet" media="screen" href="css/default.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/header.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/cms-footer.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/index.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script>
+        $(function(){
+            $('.header').after('<div class="mask"></div>');
+            $('.cms-menu').click(function () {
+                $('.menu ul').slideToggle();
+                $('.mask').toggleClass('open');
+                $('body').toggleClass('open');
+                return false;
+            });
+
+
+
+        });
+
+            
+
+    </script>
+	
+<link type="text/css" rel="stylesheet" href="js/formvalid/validationEngine.jquery.css"/>
+<script type="text/javascript" src="js/formvalid/jquery.js" ></script>
+<script type="text/javascript" src="js/formvalid/jquery.validationEngine-eng.js" ></script>
+<script>    
+$(document).ready(function() {
+    // SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() }, 
+    $("#formID").validationEngine({
+        success : function() { callSuccessFunction() }, 
+        failure : function() {}
+    })
+    //$.validationEngine.buildPrompt("#date","This is an example","error")           // Exterior prompt build example
+    //$.validationEngine.closePrompt(".date")                                        // Exterior prompt close example
+});
+</script>  
+	
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <div class="logo"><img src="./images/logo.png"></div>
+                <div class="menu">
+                    <div class="cms-menu"></div>
+                    <ul>
+                            <li><a href="index.html">Website</a></li>
+                            <li><a href="gd.html">Graphic Design</a></li>
+                            <li><a href="ph.html">Commercial Photography</a></li>
+                    </ul>
+ </div>
+
+            </div>
+        </header>
+        <div class="content">
+            <div class="index-products-box">
+                <h2>Graphic Design</h2>
+                <ul class="small">
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=1">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-1.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g1.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Golden Asia</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-1.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=2">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-2.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g2.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Ｍotorpro</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-2.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=3">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-3.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g3.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Dyaco</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-3.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=4">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-4.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g4.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Aupart</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-4.png">
+                                    </div>
+                                </div>
+                            </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=5">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-5.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g5.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Diana</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-5.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-6.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g6.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Minz</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-6.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-7.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g7.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">S.Y.H</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-7.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-8.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g8.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">S.F.Y</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-8.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-9.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g9.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">S.F.Y</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-9.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">
+            <div class="footerlogo"><img src="./images/footer.png"></div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

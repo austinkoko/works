@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ａustin_Design</title>
+    <link type="text/css" rel="stylesheet" media="screen" href="css/default.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/header.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/cms-footer.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/index.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script>
+        $(function(){
+            $('.header').after('<div class="mask"></div>');
+            $('.cms-menu').click(function () {
+                $('.menu ul').slideToggle();
+                $('.mask').toggleClass('open');
+                $('body').toggleClass('open');
+                return false;
+            });
+
+
+
+        });
+
+            
+
+    </script>
+	
+<link type="text/css" rel="stylesheet" href="js/formvalid/validationEngine.jquery.css"/>
+<script type="text/javascript" src="js/formvalid/jquery.js" ></script>
+<script type="text/javascript" src="js/formvalid/jquery.validationEngine-eng.js" ></script>
+<script>    
+$(document).ready(function() {
+    // SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() }, 
+    $("#formID").validationEngine({
+        success : function() { callSuccessFunction() }, 
+        failure : function() {}
+    })
+    //$.validationEngine.buildPrompt("#date","This is an example","error")           // Exterior prompt build example
+    //$.validationEngine.closePrompt(".date")                                        // Exterior prompt close example
+});
+</script>  
+	
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <a href="http://sandbox.sprlink.com/KBH/Collection/"><div class="logo"><img src="./images/logo.png"></div></a>
+                <div class="menu">
+                    <div class="cms-menu"></div>
+                    <ul>
+                        <li><a href="index.html">Website</a></li>
+                        <li><a href="gd.html">Graphic Design</a></li>
+                        <li><a href="ph.html">Commercial Photography</a></li>
+                    </ul>
+ </div>
+
+            </div>
+        </header>
+        <div class="content">
+            <div class="gd-cms-index-products-box">
+                <h2>Commercial Photography</h2>
+                <ul class="small">
+                    <div class="cms-index-imac">
+                            <img src="./images/8-yuh-1.png">
+                     </div>
+                <div class="ph-allbox">
+                        <div class="ph-detail">
+                            <div class="index-equipment-box-right">
+                                        <img src="./images/8-yuh-2.png">
+                                </div>
+                            <div class="index-equipment-box-left">
+                                            <img src="./images/8-yuh-3.png">
+                        </div>
+                        </div>
+                        <h3>Product Description</h3>
+                        <div class="index-equipment-box-left">
+                            <img src="./images/8-yuh-4.png">
+        </div>
+                   </div>
+                </ul>
+            </div>
+        </div>
+        <ul class="product-icon-box">
+                <li class="product-icon-hang">
+                <a href="index-detailed-ph-7.html" title="T202-3-Glass Nesting Table"><i class="fa fa-angle-left"></i>PREV</a>
+                </li>
+                <li class="product-icon-hang">
+                    <a href="http://sandbox.sprlink.com/KBH/Collection/" onclick="javascript:history.go(-1)">
+                        <span>BACK</span>
+                    </a>
+                </li>
+                <li class="product-icon-hang">
+                <a href="index-detailed-ph-1.html" title="T530-3PCS Nesting Tables Set">NEXT<i class="fa fa-angle-right"></i></a>
+                <li class="product-icon-hang">
+            </ul>
+
+        <footer>
+            <div class="copyright">
+            <div class="footerlogo"><img src="./images/footer.png"></div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

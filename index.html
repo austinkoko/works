@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ａustin_Design</title>
+    <link type="text/css" rel="stylesheet" media="screen" href="css/default.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/header.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/cms-footer.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/index.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jsManage.js"></script>
+    <script>new WOW().init();</script>
+    <script>
+        $(function(){
+            $('.header').after('<div class="mask"></div>');
+            $('.cms-menu').click(function () {
+                $('.menu ul').slideToggle();
+                $('.mask').toggleClass('open');
+                $('body').toggleClass('open');
+                return false;
+            });
+
+
+
+        });
+
+            
+
+    </script>
+	
+<link type="text/css" rel="stylesheet" href="js/formvalid/validationEngine.jquery.css"/>
+<script type="text/javascript" src="js/formvalid/jquery.js" ></script>
+<script type="text/javascript" src="js/formvalid/jquery.validationEngine-eng.js" ></script>
+<script>    
+$(document).ready(function() {
+    // SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() }, 
+    $("#formID").validationEngine({
+        success : function() { callSuccessFunction() }, 
+        failure : function() {}
+    })
+    //$.validationEngine.buildPrompt("#date","This is an example","error")           // Exterior prompt build example
+    //$.validationEngine.closePrompt(".date")                                        // Exterior prompt close example
+});
+</script>  
+	
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <a href="http://sandbox.sprlink.com/KBH/Collection/"><div class="logo"><img src="./images/logo.png"></div></a>
+                <div class="menu">
+                    <div class="cms-menu"></div>
+                    <ul>
+                        <li><a href="index.html">Website</a></li>
+                        <li><a href="gd.html">Graphic Design</a></li>
+                        <li><a href="ph.html">Commercial Photography</a></li>
+                    </ul>
+ </div>
+
+            </div>
+        </header>
+        <div class="content">
+            <div class="index-products-box">
+                <h2>Website</h2>
+                <ul class="small">
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=1">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/index-1.png">
+                                    </div>
+                                </div>
+                                <a href="index-detailed-roy.html">
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Royalrods</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/index-1.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=2">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/index-2.png">
+                                    </div>
+                                </div>
+                                <a href="index-detailed-cm.html">
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Chungmei</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/index-2.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=3">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/index-3.png">
+                                    </div>
+                                </div>
+                                <a href="index-detailed-new.html">
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Newpack</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/index-3.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=4">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/index-4.png">
+                                    </div>
+                                </div>
+                                <a href="index-detailed-com.html">
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Comfpro</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/index-4.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=5">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/index-5.png">
+                                    </div>
+                                </div>
+                                <a href="index-detailed-agg.html">
+                                <div class="index-equipment-before">
+                                        <div class="index-products-before-name">Aggpower</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/index-5.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/index-6.png">
+                                    </div>
+                                </div>
+                                <a href="index-detailed-cat.html">
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Cattylego</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/index-6.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/index-7.png">
+                                    </div>
+                                </div>
+                                <a href="index-detailed-ar.html">
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Wonderland</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/index-7.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/index-8.png">
+                                    </div>
+                                </div>
+                                <a href="index-detailed-aip.html">
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Ai poli</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/index-8.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/index-9.png">
+                                    </div>
+                                </div>
+                                <a href="index-detailed-ksy.html">
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">KSY</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/index-9.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div id="page">
+                    <span class="current">1</span>&nbsp;|&nbsp;<a href="index-2.html">2</a>
+                </div>
+        </div>
+
+        <footer>
+            <div class="copyright">
+            <div class="footerlogo"><img src="./images/footer.png"></div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

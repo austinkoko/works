@@ -1,0 +1,45 @@
+@import url(font-awesome/css/font-awesome.min.css);
+
+/* CSS Document */
+
+.copyright{
+    border-top: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+
+
+
+}
+
+.footerlogo{justify-content: right;display: flex; padding: 0 100px 0 0;margin: 20px 45px 0 0; max-width: 1563px;}
+.footerlogo img{width: 14vw;;}
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    .footerlogo{justify-content: right;display: flex; padding: 0 100px 0 0;margin: 20px 45px 0 0; max-width: 1290px;}
+
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+.footerlogo{justify-content: center; padding: 10px;margin: 20px auto;}
+.footerlogo img{width: 50%;height:50%;}
+
+
+
+
+}
+
+
+
+
+
+
+
