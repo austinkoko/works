@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Yuanguan_Technology_Lighting</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+	body,
+	wrapper,
+	master,
+	logo,
+	menu,
+	language,
+	footer,
+	div,
+	ul,
+	li,
+	h1,
+	h2,
+	p,
+	img {
+		margin: 0px;
+		padding: 0px;
+		font: 12px Arial, Helvetica, sans-serif;
+	}
+
+	a {
+		text-decoration: none
+	}
+
+	img {
+		border: none;
+	}
+
+	.index01 {
+		width: 100%;
+		background: url(images/Yuanguan_Technology_Lighting.png) no-repeat top center;
+		display: block;
+		height: 839px;
+		margin: 0px auto;
+	}
+	.animated  {
+  -webkit-animation-duration : 2000 ms  ;
+  animation-duration : 2000 ms  ;
+  -webkit-animation-fill-mode : both  ;
+  animation-fill-mode : both  ;
+ }  
+</style>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jsManage.js"></script>
+<!-- owl -->
+<link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
+<script src="js/owlcarousel/owl.carousel.js"></script>
+<!-- end owl -->
+<script>
+	jQuery(document).ready(function ($) {
+		$('.banner_pic').owlCarousel({
+			items: 1,
+			animateOut: 'fadeOut',
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplayTimeout: 2000
+		});
+	});
+</script>
+</head>
+
+<body>
+
+
+	<a href="#" class="banner_pic owl-carousel">
+			<div><img src="images/Yuanguan_Technology_Lighting.png"></div>
+	</a>
+
+</body>
+
+</html>
