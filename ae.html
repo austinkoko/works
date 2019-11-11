@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ａustin_Design</title>
+    <link type="text/css" rel="stylesheet" media="screen" href="css/default.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/header.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/cms-footer.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/index.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/video.js"></script>
+    <script>new WOW().init();</script>
+    <script>
+        $(function(){
+            $('.header').after('<div class="mask"></div>');
+            $('.cms-menu').click(function () {
+                $('.menu ul').slideToggle();
+                $('.mask').toggleClass('open');
+                $('body').toggleClass('open');
+                return false;
+            });
+
+
+
+        });
+
+            
+
+    </script>
+	
+<link type="text/css" rel="stylesheet" href="js/formvalid/validationEngine.jquery.css"/>
+<script type="text/javascript" src="js/formvalid/jquery.js" ></script>
+<script type="text/javascript" src="js/formvalid/jquery.validationEngine-eng.js" ></script>
+<script>    
+$(document).ready(function() {
+    // SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() }, 
+    $("#formID").validationEngine({
+        success : function() { callSuccessFunction() }, 
+        failure : function() {}
+    })
+    //$.validationEngine.buildPrompt("#date","This is an example","error")           // Exterior prompt build example
+    //$.validationEngine.closePrompt(".date")                                        // Exterior prompt close example
+});
+</script>  
+	
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <a href="https://austinkoko.github.io/works/index.html"><div class="logo"><img src="./images/logo.png"></div></a>
+                <div class="menu">
+                    <div class="cms-menu"></div>
+                    <ul>
+                            <li><a href="index.html">Website</a></li>
+                            <li><a href="gd.html">Graphic Design</a></li>
+                            <li><a href="ph.html">Commercial Photography</a></li>
+                            <li><a href="ae.html">After Effects</a></li>
+                    </ul>
+ </div>
+
+            </div>
+        </header>
+        <div class="content">
+            <div class="index-products-box">
+                <h2>After Effects</h2>
+                <ul class="small">
+                    <li>
+                        <div class="video-1">
+                            <article class="video-item">
+                                <figure>
+                                  <a href="#post-popup1" class="open-video-link"><img src="/themes/b52/images/b52-video-1.jpg"></a>
+                                </figure>
+                              </article>
+                              
+                              <div id="post-popup1" class="post-popup popup-modal" style="display: none;">
+                                <span class="close"></span>
+                                <div class="popup-header">
+                                  <h4>媽咪泡夜奶不再痛苦 : 懂你的B52白小胖外出奶粉罐</h4>
+                                </div>
+                                <div class="popup-video">
+                                  <iframe width="1000" height="1000" src="https://www.youtube.com/embed/hpe9jIvrPK8" frameborder="0" allowfullscreen="" style="width: 100%; height: 450px;"></iframe>
+                                </div>
+                                <div class="popup-main">
+                                    <p>專利設計</p>
+                                <p>1.比照奶粉湯匙容量定量&amp;不逆流結構，透過轉動準確落入奶粉</p>
+                                <p>2.支援大部分奶粉泡法水30ml or 60ml</p>
+                                <p>3.白小胖一格 =4.5g (誤差±0.5g)=水30ml</p>
+                                <p>4.白小胖兩格 = 9g (誤差±0.5g) = 水60ml</p>
+                                <p>5.若泡法不同的奶粉(如 : 20ml.40ml)，媽媽也不用擔心</p>
+                                <p>6.我們可以協助換算奶粉附的湯匙容量及對應使用方法哦!!!</p>
+                                  </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=2">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-2.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g2.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Ｍotorpro</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-2.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=3">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-3.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g3.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Dyaco</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-3.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=4">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-4.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g4.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Aupart</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-4.png">
+                                    </div>
+                                </div>
+                            </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=5">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-5.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g5.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Diana</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-5.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-6.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g6.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">Minz</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-6.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-7.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g7.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">S.Y.H</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-7.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-8.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g8.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">S.F.Y</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-8.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.php?func=p_list&amp;pc_parent=6">
+                            <div class="index-equipment-box">
+                                <div class="index-equipment-affter">
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-9.png">
+                                    </div>
+                                </div>
+                                <a href=index-detailed-g9.html>
+                                <div class="index-equipment-before">
+                                    <div class="index-products-before-name">S.F.Y</div>
+                                    <div class="index-products-img">
+                                        <img src="./images/gd-9.png">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">
+            <div class="footerlogo"><img src="./images/footer.png"></div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
