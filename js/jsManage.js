@@ -131,181 +131,69 @@
 		return window.pageYOffset;
 	}
 	
-	
-	
-	
 	jQuery(function($){
-	
+
 		// Lightbox Triggers
 		$(".open-video-link").videoBox();
-	});
-	/* ========================================================================= */
-	/* FUNCTION TO CREATE LIGHTBOX */
-	/* ========================================================================= */
-	
-	jQuery.fn.extend({
+		});
+		/* ========================================================================= */
+		/* FUNCTION TO CREATE LIGHTBOX */
+		/* ========================================================================= */
+		
+		jQuery.fn.extend({
 		videoBox : function() {
-				var self, link, target, video, videoSrc, toggle;
-				this.each(function() {
-						$(this).on("click", function(event) {
-								self = this;
-								target = $(self).attr("href");
-								video = $(target).find(".popup-video iframe");
-								videoSrc = $(video).attr("src");
-								event.preventDefault ? event.preventDefault() : event.returnValue = false;
-								$(target).wrap( "<div class='lightbox'></div>" );
-								$(".lightbox").fadeIn(300, function() {
-										$(target).fadeIn(0);
-										$("body").addClass("modal-open");
-										$(video).attr("src",videoSrc+'?autoplay=1');
-										resizeIfame(video);
-								});
-	
-								$("body").on("click", function(event) {
-										if(($(event.target).hasClass("lightbox") || $(event.target).hasClass("close")) && $(target).parent().hasClass("lightbox") ) {
-												$(".lightbox").fadeOut(300, function() {
-														$(target).hide(0);
-														$(target).unwrap();
-												});
-												$("body").removeClass("modal-open");
-												$(video).attr("src",videoSrc);
-										}
-								});
-						});
-				});
+		var self, link, target, video, videoSrc, toggle;
+		this.each(function() {
+		$(this).on("click", function(event) {
+		self = this;
+		target = $(self).attr("href");
+		video = $(target).find(".popup-video iframe");
+		videoSrc = $(video).attr("src");
+		event.preventDefault ? event.preventDefault() : event.returnValue = false;
+		$(target).wrap( "<div class='lightbox'></div>" );
+		$(".lightbox").fadeIn(300, function() {
+		$(target).fadeIn(0);
+		$("body").addClass("modal-open");
+		$(video).attr("src",videoSrc+'?autoplay=1');
+		resizeIfame(video);
+		});
+		
+		$("body").on("click", function(event) {
+		if(($(event.target).hasClass("lightbox") || $(event.target).hasClass("close")) && $(target).parent().hasClass("lightbox") ) {
+		$(".lightbox").fadeOut(300, function() {
+		$(target).hide(0);
+		$(target).unwrap();
+		});
+		$("body").removeClass("modal-open");
+		$(video).attr("src",videoSrc);
 		}
-	});
-	
-	
-	/* ========================================================================= */
-	/* RESIZE IFRAME VIDEO FUNCTION */
-	/* ========================================================================= */
-	function resizeIfame(frame) {
-	
+		});
+		});
+		});
+		}
+		});
+		
+		
+		/* ========================================================================= */
+		/* RESIZE IFRAME VIDEO FUNCTION */
+		/* ========================================================================= */
+		function resizeIfame(frame) {
+		
 		var oldWidth = $(frame).width();
 		var oldHeight = $(frame).height();
 		var propotion = oldHeight / oldWidth;
 		var newHeight;
-	
+		
 		$(frame).width('100%');
 		newHeight = $(frame).width() * propotion;
 		$(frame).height(newHeight);
-	
+		
 		$(window).resize(function() {
-				$(frame).width('100%');
-				newHeight = $(frame).width() * propotion;
-				$(frame).height(newHeight);
+		$(frame).width('100%');
+		newHeight = $(frame).width() * propotion;
+		$(frame).height(newHeight);
 		});
-	}
-	
-	
-	
-	let el = $('.switch');
-	let cur = el.find('.current');
-	let options = el.find('.options li');
-	let content = $('#content');
-	let options_list = $('.options-list')
-	
-	// Open language dropdown panel
-	
-	el.on('click', function(e) {
-		el.addClass('show-options');
-		
-		setTimeout(function() {
-			el.addClass('anim-options');
-		}, 50);
-		
-		setTimeout(function() {
-			el.addClass('show-shadow');
-		}, 200);
-	});
-	
-	
-	// Close language dropdown panel
-	
-	options.on('click', function(e) {
-		e.stopPropagation();
-		el.removeClass('anim-options');
-		el.removeClass('show-shadow');
-		
-		let newLang = $(this).data('lang');
-		
-		cur.find('span').text(newLang);
-		content.attr('class', newLang);
-		
-		setLang(newLang);
-		
-		options.removeClass('selected');
-		$(this).addClass('selected');
-		
-		setTimeout(function() {
-			el.removeClass('show-options');
-		}, 600);
-	});
-	
-	options_list.on('mouseleave', function(e){
-		e.stopPropagation();
-		el.removeClass('anim-options');
-		el.removeClass('show-shadow');
-		setTimeout(function(){
-			el.removeClass('show-options');
-		},0);
-		
-	});
-	
-	
-	// Save selected options into Local Storage
-	
-	function getLang() {
-		let lang;
-		if (localStorage.getItem('currentLang') === null) {
-			lang = cur.find('span').text();
-		} else {
-			lang = JSON.parse(localStorage.getItem('currentLang')).toLowerCase();
-		}
-		
-		// console.log(lang);
-	
-		cur.find('span').text(lang);
-		options.parent().find(`li[data-lang="${lang}"]`).addClass('selected');
-		
-		content.attr('class', lang);
-	}
-	
-	getLang();
-	
-	function setLang(newLang) {
-			localStorage.setItem('currentLang', JSON.stringify(newLang).toLowerCase());
-		
-		content.attr('class', newLang);
-		
-		// console.log('New language is: ' + newLang);
-	}
-	
-	$(function(){
-		/*$(".JQellipsis").each(function(){
-			$(this).attr("data", $(this).text());
-		});
-	
-		checkout()*/
-	
-		function checkout () {
-			var len
-			if (900 > document.body.scrollWidth) len = 43
-			else len = 500
-			$(".JQellipsis").each(function(){
-				if($(this).attr('data').length > len) $(this).text($(this).attr('data').substring(0, len-1 ) + "...")
-			});
-	
-			if (900 < document.body.scrollWidth) len = 43
-			else len = 500
-			$(".JQellipsis").each(function(){
-				if($(this).attr('data').length > len) $(this).text($(this).attr('data').substring(0, len-1 ) + "代的超級利器—B52，終於誕生了。 從此，黃臉婆不再是媽媽的代名詞， 而BABY BOMB也不再是「BOMB　BOMB」，而是「棒棒」！BOMBER的神器，一掃爸爸們照顧嬰兒的恐懼，他們從此和媽媽爭先恐後，爭取享受親情的樂趣！")
-			});
-		 
 		}
 	
-		/*$(window).resize(function () {
-			checkout()
-		});*/
-	});
+	
+	
