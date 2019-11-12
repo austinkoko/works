@@ -12,42 +12,7 @@
     <link type="text/css" rel="stylesheet" media="screen" href="css/index.css">
     <link type="text/css" rel="stylesheet" media="screen" href="css/video.css">
     <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
-    <script src="js/jquery.min.js"></script>
-    <script src="js/video.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
-    <script>
-        $(function(){
-            $('.header').after('<div class="mask"></div>');
-            $('.cms-menu').click(function () {
-                $('.menu ul').slideToggle();
-                $('.mask').toggleClass('open');
-                $('body').toggleClass('open');
-                return false;
-            });
-
-
-
-        });
-
-            
-
-    </script>
-	
-<link type="text/css" rel="stylesheet" href="js/formvalid/validationEngine.jquery.css"/>
-<script type="text/javascript" src="js/formvalid/jquery.js" ></script>
-<script type="text/javascript" src="js/formvalid/jquery.validationEngine-eng.js" ></script>
-<script>    
-$(document).ready(function() {
-    // SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() }, 
-    $("#formID").validationEngine({
-        success : function() { callSuccessFunction() }, 
-        failure : function() {}
-    })
-    //$.validationEngine.buildPrompt("#date","This is an example","error")           // Exterior prompt build example
-    //$.validationEngine.closePrompt(".date")                                        // Exterior prompt close example
-});
-</script>  
+   
 	
 </head>
 <body>
@@ -105,5 +70,41 @@ $(document).ready(function() {
         </footer>
     </div>
 </body>
+<script src="js/jquery.min.js"></script>
+<script src="js/video.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script>
+    $(function(){
+        $('.header').after('<div class="mask"></div>');
+        $('.cms-menu').click(function () {
+            $('.menu ul').slideToggle();
+            $('.mask').toggleClass('open');
+            $('body').toggleClass('open');
+            return false;
+        });
+
+
+
+    });
+
+        
+
+</script>
+
+<link type="text/css" rel="stylesheet" href="js/formvalid/validationEngine.jquery.css"/>
+<script type="text/javascript" src="js/formvalid/jquery.js" ></script>
+<script type="text/javascript" src="js/formvalid/jquery.validationEngine-eng.js" ></script>
+<script>    
+$(document).ready(function() {
+// SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() }, 
+$("#formID").validationEngine({
+    success : function() { callSuccessFunction() }, 
+    failure : function() {}
+})
+//$.validationEngine.buildPrompt("#date","This is an example","error")           // Exterior prompt build example
+//$.validationEngine.closePrompt(".date")                                        // Exterior prompt close example
+});
+</script>  
 
 </html>
